@@ -6,14 +6,14 @@ import { IconApp, IconChevronRight, IconArrowLeft, IconGithub } from "@/componen
 export const metadata: Metadata = {
   title: "Open-Source Software & Edge Systems | Reyhane Javidi Alsaadi",
   description:
-    "Open-source software, edge AI applications, and high-performance mobile systems engineered by Reyhane Javidi Alsaadi.",
+    "Production-grade open-source software, edge AI applications, and high-performance mobile systems engineered by Reyhane Javidi Alsaadi.",
   alternates: {
     canonical: "https://reyhane-code.github.io/projects/",
   },
   openGraph: {
     title: "Open-Source Software & Edge Systems | Reyhane Javidi Alsaadi",
     description:
-      "Open-source software, edge AI applications, and high-performance mobile systems engineered by Reyhane Javidi Alsaadi.",
+      "Production-grade open-source software, edge AI applications, and high-performance mobile systems engineered by Reyhane Javidi Alsaadi.",
     url: "https://reyhane-code.github.io/projects/",
     type: "website",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Open-Source Software & Edge Systems | Reyhane Javidi Alsaadi",
     description:
-      "Open-source software, edge AI applications, and high-performance mobile systems engineered by Reyhane Javidi Alsaadi.",
+      "Production-grade open-source software, edge AI applications, and high-performance mobile systems engineered by Reyhane Javidi Alsaadi.",
     images: ["https://reyhane-code.github.io/figures/fig_architecture.png"],
   },
 };
