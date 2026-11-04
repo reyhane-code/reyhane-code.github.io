@@ -969,8 +969,8 @@ export default function HomePage() {
               </div>
             )}
 
-            {/* Modal Image Viewport */}
-            <div className="overflow-auto p-4 flex items-center justify-center bg-zinc-100 max-h-[72vh]">
+            {/* Modal Image Viewport (Pre-reserved dimensions prevent layout shift / jumping on image load) */}
+            <div className="overflow-auto p-4 flex items-center justify-center bg-zinc-100/90 h-[68vh] min-h-[380px] sm:min-h-[520px] max-h-[72vh] relative">
               <img
                 src={
                   activeDocumentModal.hasDualVersion
@@ -986,7 +986,8 @@ export default function HomePage() {
                       : "Original Persian Document"
                     : activeDocumentModal.alt
                 }
-                className="max-w-full max-h-[66vh] object-contain rounded border border-zinc-200 shadow-sm bg-white"
+                className="max-w-full max-h-full object-contain rounded border border-zinc-200 shadow-sm bg-white"
+                loading="eager"
               />
             </div>
 

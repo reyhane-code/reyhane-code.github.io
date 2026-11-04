@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "BioDINO-Edge Android: 100% Offline Edge Plant Pathology Scanner | Open Source",
   description:
     "Native Kotlin 2.0 Android app running vision foundation model inference at >55 FPS without internet. Features zero-GC tensor memory, ONNX Runtime Mobile NNAPI, and 22.7 MB APK.",
+  alternates: {
+    canonical: "https://reyhane-code.github.io/projects/biodino-edge-android/",
+  },
   keywords: [
     "BioDINO-Edge Android",
     "Edge AI Scanner",
@@ -20,14 +23,23 @@ export const metadata: Metadata = {
     title: "BioDINO-Edge Android: 100% Offline Edge Plant Pathology Scanner",
     description:
       "22.7 MB standalone Android APK running multi-scale foundation models on edge CPUs at >55 FPS with zero cloud dependency.",
-    url: "https://reyhane-alsaadi.github.io/projects/biodino-edge-android/",
+    url: "https://reyhane-code.github.io/projects/biodino-edge-android/",
     type: "website",
+    images: [
+      {
+        url: "https://reyhane-code.github.io/figures/fig_architecture.png",
+        width: 1200,
+        height: 630,
+        alt: "BioDINO-Edge Android Architecture & Pipeline",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "BioDINO-Edge Android (22.7 MB Zero-GC Edge Scanner)",
     description:
       "Native Kotlin + Jetpack Compose application with ONNX Runtime NNAPI acceleration.",
+    images: ["https://reyhane-code.github.io/figures/fig_architecture.png"],
   },
 };
 
@@ -46,7 +58,7 @@ export default function BioDinoEdgeAndroidLayout({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             mainEntityOfPage:
-              "https://reyhane-alsaadi.github.io/projects/biodino-edge-android/",
+              "https://reyhane-code.github.io/projects/biodino-edge-android/",
             name: "BioDINO-Edge Mobile: 100% Offline Edge Plant Pathology Scanner",
             alternateName: "BioDINO-Edge Android",
             operatingSystem: "Android 9.0 (API Level 28) or higher (arm64-v8a)",
@@ -55,12 +67,12 @@ export default function BioDinoEdgeAndroidLayout({
             fileSize: "22.7 MB",
             fileFormat: "application/vnd.android.package-archive",
             downloadUrl:
-              "https://reyhane-alsaadi.github.io/biodino-edge-v1.0.0.apk",
+              "https://reyhane-code.github.io/biodino-edge-v1.0.0.apk",
             installUrl:
-              "https://reyhane-alsaadi.github.io/biodino-edge-v1.0.0.apk",
+              "https://reyhane-code.github.io/biodino-edge-v1.0.0.apk",
             softwareVersion: "1.0.0",
             datePublished: "2026-11-01",
-            dateModified: "2026-11-03",
+            dateModified: "2026-11-04",
             releaseNotes:
               "Initial production release of the 100% offline edge scanner powered by ONNX Runtime Mobile NNAPI and INT8 quantized vision foundation models.",
             featureList: [
@@ -71,7 +83,7 @@ export default function BioDinoEdgeAndroidLayout({
               "3-Layer Out-of-Distribution Security Gate (Luminance, Botanical Manifold & Shannon Margin Gating)",
               "Rapid In-Field 5-Shot Novel Pathology Registration",
             ],
-            screenshot: "https://reyhane-alsaadi.github.io/figures/fig_architecture.png",
+            screenshot: "https://reyhane-code.github.io/figures/fig_architecture.png",
             permissions: "android.permission.CAMERA",
             storageRequirements: "30 MB free internal storage space",
             memoryRequirements: "150 MB free RAM",

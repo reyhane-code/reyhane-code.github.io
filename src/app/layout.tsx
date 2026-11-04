@@ -5,10 +5,13 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://reyhane-alsaadi.github.io"),
+  metadataBase: new URL("https://reyhane-code.github.io"),
   title: "Reyhane Javidi Alsaadi | AI Researcher & BioDINO-Edge Lead Author",
   description:
     "Computer Engineering Scholar (Top 5% Cohort, 19.16/20.00 B.Sc. GPA, Summa Cum Laude) & Lead Author of BioDINO-Edge (DINOv2 + BioCLIP for Few-Shot Edge Pathology, 98.72% peak accuracy). Prospective M.Sc. / Ph.D. Researcher.",
+  alternates: {
+    canonical: "https://reyhane-code.github.io/",
+  },
   keywords: [
     "Reyhane Javidi Alsaadi",
     "BioDINO-Edge",
@@ -33,12 +36,13 @@ export const metadata: Metadata = {
     title: "Reyhane Javidi Alsaadi | AI Researcher & BioDINO-Edge Lead Author",
     description:
       "Top 5% Scholar (19.16/20 B.Sc. GPA, ~3.97/4.00, Dean's List) & Lead Author of BioDINO-Edge (98.72% peak accuracy). Seeking graduate research assistantships in Edge AI & Vision Foundation Models.",
+    url: "https://reyhane-code.github.io/",
     type: "website",
     siteName: "Reyhane Javidi Alsaadi - Academic Research Portfolio",
     locale: "en_US",
     images: [
       {
-        url: "/my-img.jpg",
+        url: "https://reyhane-code.github.io/my-img.jpg",
         width: 800,
         height: 1000,
         alt: "Reyhane Javidi Alsaadi - Computer Engineering Scholar & Researcher",
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
     title: "Reyhane Javidi Alsaadi | AI Researcher & BioDINO-Edge Lead Author",
     description:
       "Top 5% Scholar (19.16/20 B.Sc. GPA, Dean's List) & Lead Author of BioDINO-Edge (98.72% peak accuracy). Seeking M.Sc. / Ph.D. graduate opportunities.",
-    images: ["/my-img.jpg"],
+    images: ["https://reyhane-code.github.io/my-img.jpg"],
   },
 };
 
