@@ -65,10 +65,22 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="min-h-full flex flex-col bg-[#fafaf9] text-zinc-900 selection:bg-zinc-950 selection:text-white">
-        <Navbar />
-        <div className="flex-1 bg-[#fafaf9]">{children}</div>
-        <Footer />
-        <BackToTop />
+        {/* Printable Academic CV for Ctrl+P / Browser Print */}
+        <div className="hidden print:block print:w-full print:m-0 print:p-0 print-cv-container" aria-hidden="true">
+          <div className="print-cv-page">
+            <img src="/cv_print_p1.png" alt="Reyhane Javidi Alsaadi Academic CV - Page 1" className="w-full h-auto block" />
+          </div>
+          <div className="print-cv-page">
+            <img src="/cv_print_p2.png" alt="Reyhane Javidi Alsaadi Academic CV - Page 2" className="w-full h-auto block" />
+          </div>
+        </div>
+
+        <div className="flex-1 flex flex-col print:hidden">
+          <Navbar />
+          <div className="flex-1 bg-[#fafaf9]">{children}</div>
+          <Footer />
+          <BackToTop />
+        </div>
       </body>
     </html>
   );

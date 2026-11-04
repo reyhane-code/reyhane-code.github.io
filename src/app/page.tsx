@@ -40,6 +40,10 @@ export default function HomePage() {
       if (e.key === "Escape") {
         setActiveDocumentModal(null);
       }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        window.print();
+      }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
