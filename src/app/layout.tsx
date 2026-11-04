@@ -56,6 +56,16 @@ export const metadata: Metadata = {
       "Top 5% Scholar (19.16/20 GPA) & Lead Author of BioDINO-Edge (98.72% accuracy). Seeking graduate research assistantships in Edge AI & Vision Models.",
     images: ["https://reyhane-code.github.io/my-img.jpg"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -67,6 +77,8 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className="min-h-full flex flex-col bg-[#fafaf9] text-zinc-900 selection:bg-zinc-950 selection:text-white">
         {/* Printable Academic CV for Ctrl+P / Browser Print */}
